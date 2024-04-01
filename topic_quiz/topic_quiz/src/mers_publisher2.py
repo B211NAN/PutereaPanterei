@@ -12,28 +12,28 @@ def callback(msg):
       turn.linear.x = 0
       turn.angular.z = 0
       pub.publish(turn)
-      time.sleep(2)
+      time.sleep(4)
       
-      for i in range(4):
-      	turn.angular.z = 0.2
+      for i in range(2):
+      	turn.angular.z = 0.5
       	pub.publish(turn) 
-      	time.sleep(2)
+      	time.sleep(4)
       	i+=1
       
-      turn.linear.x = 0.2
+      turn.linear.x = 0.5
       turn.angular.z = 0
       pub.publish(turn)
-      time.sleep(2)
+      time.sleep(4)
       
       turn.linear.x = 0
       turn.angular.z = 0
       pub.publish(turn)
-      time.sleep(2)
+      time.sleep(4)
       
-      turn.linear.x = 0.2
+      turn.linear.x = 0.5
       turn.angular.z = 0
       pub.publish(turn)
-      time.sleep(2)
+      time.sleep(4)
       
       #for i in range(4):
       	#turn.angular.z = -0.2
